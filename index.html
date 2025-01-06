@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('platform.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+
+  header {
+  background-color: rgba(0, 123, 255, 0.5); /* Lower alpha for transparency */
+  color: white;
+  text-align: center;
+  padding: 10px 0; /* Reduced padding for a smaller size */
+  font-size: 14px; /* Adjusted font size for smaller appearance */
+} 
+
+
+header nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.intro {
+    position: absolute; /* Allows precise positioning */
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    left: 20px; /* Distance from the left of the viewport */
+    background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+    padding: 20px; /* Adds spacing inside the box */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+    max-width: 300px; /* Optional: limits width for better readability */
+}
+
+
+.intro h2 {
+  margin-top: 0; /* Removes default margin for better spacing */
+  color: #007BFF; /* Optional: a color for the heading */
+}
+
+.intro p {
+  margin: 0; /* Removes default margin for better spacing */
+  color: #333; /* Optional: a color for the text */
+}
+
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.feature h3 {
+  color: #007BFF;
+  margin: 15px 0 10px;
+}
+
+.feature p {
+  color: #555;
+}
+
+.feature a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.feature a:hover {
+  text-decoration: underline;
+}
+
+ </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-learning Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 style="color: black; font-size: 30px;">Welcome to E-learning Platform</h1>
+    <nav>
+      <a href="courses.html" style="color: black; font-size: 20px;">Courses</a>
+      <a href="quiz.html" style="color: black; font-size: 20px;" >Quizzes</a>
+      <a href="progress.html" style="color: black; font-size: 20px;">Progress Tracker</a>
+    </nav>
+  </header>
+  <main>
+    <section class="intro">
+      <h2>Learn Anywhere, Anytime!</h2>
+      <p>Access video lessons, take quizzes, and track your progress to enhance your learning experience.</p>
+    </section>
+    
+    
+  </main>
+</body>
+</html>

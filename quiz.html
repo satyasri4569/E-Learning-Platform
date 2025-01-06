@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('pinkkkkkk.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 style="color: black; font-size: 20px;">Quiz Section</h1>
+    <nav>
+      <a href="index.html"style="color: black; font-size: 20px;">Home</a>
+      <a href="courses.html" style="color: black; font-size: 20px;">Courses</a>
+      <a href="progress.html" style="color: black; font-size: 20px;">Progress Tracker</a>
+    </nav>
+  </header>
+  <main>
+    <!-- Clickable Image for Quiz 1 -->
+    <div class="quiz-image-container-wrapper">
+
+    <div class="quiz-image-container" data-quiz="quiz1">
+      <img class="quiz-image" src="html.jpg"alt="HTML Quiz">
+    </div>
+
+    <!-- Clickable Image for Quiz 2 -->
+    <div class="quiz-image-container" data-quiz="quiz2">
+      <img class="quiz-image" src="js q.jpg" alt="JavaScript Quiz">
+    </div>
+
+    <!-- Clickable Image for Quiz 3 -->
+    <div class="quiz-image-container" data-quiz="quiz3">
+      <img class="quiz-image" src="css quiz.jpg"alt="CSS Quiz">
+    </div>
+
+    <!-- Clickable Image for Quiz 4 -->
+    <div class="quiz-image-container" data-quiz="quiz4">
+      <img class="quiz-image" src="p .jpg"alt="Python Quiz">
+    </div>
+
+    <!-- Clickable Image for Quiz 5 -->
+    <div class="quiz-image-container" data-quiz="quiz5">
+      <img class="quiz-image" src="r js.jpg" alt="ReactJS Quiz">
+    </div>
+
+    <!-- Clickable Image for Quiz 6 -->
+    <div class="quiz-image-container" data-quiz="quiz6">
+      <img class="quiz-image" src="js q.jpg"alt="NodeJS Quiz">
+    </div>
+
+    <!-- Clickable Image for Quiz 7 -->
+    <div class="quiz-image-container" data-quiz="quiz7">
+      <img class="quiz-image" src="db.jpg" alt="MongoDB Quiz">
+    </div>
+
+    <!-- Clickable Image for Quiz 8 -->
+    <div class="quiz-image-container" data-quiz="quiz8">
+      <img class="quiz-image" src="ai.jpg" alt="Generative AI Quiz">
+    </div>
+</div>
+    <!-- Quiz Form 1 -->
+    <form class="quiz-form" id="quiz1" style="display: none;">
+      <p>Question 1: What does HTML stand for?</p>
+      <input type="radio" name="q1" value="correct"> HyperText Markup Language<br>
+      <input type="radio" name="q1" value="wrong"> HighText Machine Language<br>
+      <input type="radio" name="q1" value="wrong"> Home Tool Markup Language<br><br>
+
+      <p>Question 2: What is the purpose of the <br> tag?</p>
+      <input type="radio" name="q2" value="wrong"> Bold Text<br>
+      <input type="radio" name="q2" value="correct"> Break Line<br>
+      <input type="radio" name="q2" value="wrong"> Adding Create a list<br><br>
+
+      <p>Question 3: What does UL tag represent?</p>
+      <input type="radio" name="q3" value="wrong">Ordered list<br>
+      <input type="radio" name="q3" value="wrong">Universal list<br>
+      <input type="radio" name="q3" value="correct">Unordered list<br><br>
+
+      <p>Question 4: Which attribute specifies the url in an anchor tag for linking?</p>
+      <input type="radio" name="q4" value="wrong">src<br>
+      <input type="radio" name="q4" value="correct"> Href<br>
+      <input type="radio" name="q4" value="wrong">Url<br><br>
+
+      <p>Question 5: Who is making the web standards?</p>
+      <input type="radio" name="q5" value="wrong">Google<br>
+      <input type="radio" name="q5" value="wrong">Mozilla<br>
+      <input type="radio" name="q5" value="correct">World Wide Web Consortium (W3C)<br><br>
+
+      <button type="button" onclick="submitQuiz('quiz1')">Submit Quiz</button>
+    </form>
+
+    <!-- Quiz Form 2 -->
+    <form class="quiz-form" id="quiz2" style="display: none;">
+      <p>Question 1: What is JavaScript primarily used for?</p>
+      <input type="radio" name="q1" value="correct"> Interactivity<br>
+      <input type="radio" name="q1" value="wrong"> Markup Markup<br>
+      <input type="radio" name="q1" value="wrong"> Styling<br><br>
+
+      <p>Question 2: Which keyword is used to declare a variable in JavaScript?</p>
+      <input type="radio" name="q2" value="wrong"> Int<br>
+      <input type="radio" name="q2" value="correct"> Var<br>
+      <input type="radio" name="q2" value="wrong"> Float<br><br>
+
+      <p>Question 3:How can you create an array in JavaScript?</p>
+      <input type="radio" name="q3" value="wrong"> let arr = (1, 2, 3);<br>
+      <input type="radio" name="q3" value="wrong">let arr = {1, 2, 3};<br>
+      <input type="radio" name="q3" value="correct"> let arr = [1, 2, 3];<br><br>
+
+      <p>Question 4: Which attribute specifies the url in an anchor tag for linking?</p>
+      <input type="radio" name="q4" value="wrong">src<br>
+      <input type="radio" name="q4" value="correct"> Href<br>
+      <input type="radio" name="q4" value="wrong">Url<br><br>
+
+      <p>Question 5: Who is making the web standards?</p>
+      <input type="radio" name="q5" value="wrong">Google<br>
+      <input type="radio" name="q5" value="wrong">Mozilla<br>
+      <input type="radio" name="q5" value="correct">World Wide Web Consortium (W3C)<br><br>
+
+      <button type="button" onclick="submitQuiz('quiz2')">Submit Quiz</button>
+    </form>
+
+    <!-- Quiz Form 3 -->
+    <form class="quiz-form" id="quiz3" style="display: none;">
+      <p>Question 1: Which of the following CSS selectors are used to specify a group of elements?</p>
+      <input type="radio" name="q1" value="correct"> class<br>
+      <input type="radio" name="q1" value="wrong"> tag<br>
+      <input type="radio" name="q1" value="wrong"> id<br><br>
+
+      <p>Question 2: Which of the following CSS framework is used to create a responsive design?</p>
+      <input type="radio" name="q2" value="wrong"> larawell<br>
+      <input type="radio" name="q2" value="correct">bootstrap<br>
+      <input type="radio" name="q2" value="wrong">django<br><br>
+
+      <p>Question 3: Which of the following CSS property is used to make the text bold?</p>
+      <input type="radio" name="q3" value="wrong">text-align: bold<br>
+      <input type="radio" name="q3" value="wrong">font-style: bold<br>
+      <input type="radio" name="q3" value="correct"> font-weight: bold<br><br>
+
+      <p>Question 4:. Which of the following CSS style property is used to specify an italic text?</p>
+      <input type="radio" name="q4" value="wrong">@font-face<br>
+      <input type="radio" name="q4" value="correct"> font-style<br>
+      <input type="radio" name="q4" value="wrong">font<br><br>
+
+      <p>Question 5: Which of the following are the CSS Extension Prefixes for Webkit?</p>
+      <input type="radio" name="q5" value="wrong">web<br>
+      <input type="radio" name="q5" value="wrong">chrome<br>
+      <input type="radio" name="q5" value="correct">webkit<br><br>
+
+      <button type="button" onclick="submitQuiz('quiz3')">Submit Quiz</button>
+    </form>
+
+    <form class="quiz-form" id="quiz4" style="display: none;">
+      <p>Question 1: Who developed Python Programming Language?<p></p>
+      <input type="radio" name="q1" value="correct"> Guido van Rossum<br>
+      <input type="radio" name="q1" value="wrong">Niene Stom<br>
+      <input type="radio" name="q1" value="wrong">Rasmus Lerdorf<br><br>
+
+      <p>Question 2:Which type of Programming does Python support?</p>
+      <input type="radio" name="q2" value="wrong">object-oriented programming<br>
+      <input type="radio" name="q2" value="correct">BOth Options<br>
+      <input type="radio" name="q2" value="wrong">functional programming<br><br>
+
+      <p>Question 3:Is Python case sensitive when dealing with identifiers?</p>
+      <input type="radio" name="q3" value="wrong">machine independent<br>
+      <input type="radio" name="q3" value="wrong">no<br>
+      <input type="radio" name="q3" value="correct">yes: bold<br><br>
+
+      <p>Question 4:Which of the following is the correct extension of the Python file?</p>
+      <input type="radio" name="q4" value="wrong">.p<br>
+      <input type="radio" name="q4" value="correct">.py<br>
+      <input type="radio" name="q4" value="wrong">.pl<br><br>
+
+      <p>Question 5:Which of the following is used to define a block of code in Python language?</p>
+      <input type="radio" name="q5" value="wrong">id<br>
+      <input type="radio" name="q5" value="wrong">Key<br>
+      <input type="radio" name="q5" value="correct">Indentation<br><br>
+
+      <button type="button" onclick="submitQuiz('quiz4')">Submit Quiz</button>
+    </form>
+
+
+    
+    <form class="quiz-form" id="quiz5" style="display: none;">
+      <p>Question 1:What is a React component?<p></p>
+      <input type="radio" name="q2" value="wrong">object-oriented programming<br>
+      <input type="radio" name="q2" value="correct">BOth Options<br>
+      <input type="radio" name="q2" value="wrong">functional programming<br><br>
+      
+
+      <p>Question 2:What is the virtual DOM in React?</p>
+      <input type="radio" name="q2" value="wrong">A database table<br>
+      <input type="radio" name="q2" value="correct">A function or class that returns a piece of UI <br>
+      <input type="radio" name="q2" value="wrong">A backend server<br><br>
+
+      <p>Question 3:Which hook is used to manage local state in a functional component?</p>
+      <input type="radio" name="q3" value="wrong">useReducer<br>
+      <input type="radio" name="q3" value="wrong">useContext<br>
+      <input type="radio" name="q3" value="correct">useState<br><br>
+
+      <p>Question 4:How do you pass data from a parent component to a child component?</p>
+      <input type="radio" name="q4" value="wrong">Using Redux<br>
+      <input type="radio" name="q4" value="correct">Using props<br>
+      <input type="radio" name="q4" value="wrong">Using context<br><br>
+
+      <p>Question 5:What is the primary purpose of React.js?</p>
+      <input type="radio" name="q1" value="correct">To build user interfaces (UI)<br>
+      <input type="radio" name="q1" value="wrong">To create operating systems<br>
+      <input type="radio" name="q1" value="wrong">To manage databases<br><br>
+
+      <button type="button" onclick="submitQuiz('quiz5')">Submit Quiz</button>
+    </form>
+
+    <form class="quiz-form" id="quiz6" style="display: none;">
+      <p>Question 1:What is Node.js primarily used for<p></p>
+      <input type="radio" name="q2" value="wrong">Creating operating systems<br>
+      <input type="radio" name="q2" value="correct">Building backend server-side applications<br>
+      <input type="radio" name="q2" value="wrong"> Building desktop applications<br><br>
+      
+
+      <p>Question 2:Which of the following is true about Node.js?</p>
+      <input type="radio" name="q2" value="wrong">It is synchronous by default<br>
+      <input type="radio" name="q2" value="correct">It is built on the V8 JavaScript engine<br>
+      <input type="radio" name="q2" value="wrong">It only works on Windows<br><br>
+
+      <p>Question 3:What does the require function do in Node.js?</p>
+      <input type="radio" name="q3" value="wrong">It reads data from a file<br>
+      <input type="radio" name="q3" value="wrong">It connects to a database<br>
+      <input type="radio" name="q3" value="correct"> It imports modules into a Node.js file<br><br>
+
+      <p>Question 4:Which module in Node.js is used to create a server?</p>
+      <input type="radio" name="q4" value="wrong">fs<br>
+      <input type="radio" name="q4" value="correct">http<br>
+      <input type="radio" name="q4" value="wrong">path<br><br>
+
+      <p>Question 5:What is the purpose of npm in Node.js?</p>
+      <input type="radio" name="q1" value="correct"> To install and manage Node.js packages<br>
+      <input type="radio" name="q1" value="wrong">To handle HTTP requests<br>
+      <input type="radio" name="q1" value="wrong"> To manage user authentication<br><br>
+
+      <button type="button" onclick="submitQuiz('quiz6')">Submit Quiz</button>
+    </form>
+
+    
+    <form class="quiz-form" id="quiz7" style="display: none;">
+      <p>Question 1:What is MongoDB?<p></p>
+      <input type="radio" name="q2" value="wrong"> A programming language<br>
+      <input type="radio" name="q2" value="correct">A NoSQL database <br>
+      <input type="radio" name="q2" value="wrong">A web server<br><br>
+      
+
+      <p>Question 2:Which data format does MongoDB primarily use to store data?</p>
+      <input type="radio" name="q2" value="wrong">CSV<br>
+      <input type="radio" name="q2" value="correct">JSON-like BSON<br>
+      <input type="radio" name="q2" value="wrong">SQL tables<br><br>
+
+      <p>Question 3:What is the purpose of a collection in MongoDB?</p>
+      <input type="radio" name="q3" value="wrong">To store indexes<br>
+      <input type="radio" name="q3" value="wrong">To store user credentials<br>
+      <input type="radio" name="q3" value="correct">To store documents <br><br>
+
+      <p>Question 4:Which method is used to insert a document into a MongoDB collection?</p>
+      <input type="radio" name="q4" value="wrong">push()<br>
+      <input type="radio" name="q4" value="correct">insertOne()<br>
+      <input type="radio" name="q4" value="wrong">insert()<br><br>
+
+      <p>Question 5:What is an index in MongoDB?</p>
+      <input type="radio" name="q1" value="correct">A way to organize data by a specific field to improve query performance<br>
+      <input type="radio" name="q1" value="wrong">A backup of data<br>
+      <input type="radio" name="q1" value="wrong">A method of storing data<br><br>
+
+      <button type="button" onclick="submitQuiz('quiz7')">Submit Quiz</button>
+    </form>
+
+    
+    <form class="quiz-form" id="quiz8" style="display: none;">
+      <p>Question 1:What is generative AI?<p></p>
+      <input type="radio" name="q2" value="wrong">AI that predicts trends<br>
+      <input type="radio" name="q2" value="correct">AI that creates new content, such as images, text, or music<br>
+      <input type="radio" name="q2" value="wrong">AI that optimizes data storage<br><br>
+      
+
+      <p>Question 2:Which of the following is a popular model used in generative AI for text generation?</p>
+      <input type="radio" name="q2" value="wrong">CNN (Convolutional Neural Network)<br>
+      <input type="radio" name="q2" value="correct"> GPT (Generative Pretrained Transformer) <br>
+      <input type="radio" name="q2" value="wrong">RNN (Recurrent Neural Network)<br><br>
+
+      <p>Question 3:What is a Generative Adversarial Network (GAN)?</p>
+      <input type="radio" name="q3" value="wrong"> A network that classifies data<br>
+      <input type="radio" name="q3" value="wrong">A network used for data preprocessing<br>
+      <input type="radio" name="q3" value="correct">A neural network used to optimize hyperparameters
+
+      <br><br>
+
+      <p>Question 4:What is a key characteristic of models like GPT-3?</p>
+      <input type="radio" name="q4" value="wrong">They do not require any training data<br>
+      <input type="radio" name="q4" value="correct">They only generate images<br>
+      <input type="radio" name="q4" value="wrong">They generate responses based on pre-existing templates<br><br>
+
+      <p>Question 5:What is the role of the 'generator' in a GAN?</p>
+      <input type="radio" name="q1" value="correct">To create synthetic data that mimics real dat<br>
+      <input type="radio" name="q1" value="wrong"> To provide labels for the data<br>
+      <input type="radio" name="q1" value="wrong">To perform classification<br><br>
+
+      <button type="button" onclick="submitQuiz('quiz8')">Submit Quiz</button>
+    </form>
+    <div id="quiz-result"></div>
+  </main>
+  <script src="quiz.js"></script>
+</body>
+</html>

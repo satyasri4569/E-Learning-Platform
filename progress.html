@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .progress-container {
+      width: 100%;
+      background-color: #f3f3f3;
+      border-radius: 5px;
+      overflow: hidden;
+      height: 20px;
+      margin: 10px 0;
+      
+    }
+
+    .progress-bar {
+      height: 100%;
+      background-color: #4caf50;
+      text-align: center;
+      color: white;
+      line-height: 20px;
+      white-space: nowrap;
+      transition: width 0.5s ease;
+    }
+  </style>
+</head>
+<body style="background-color:plum;">
+  <header>
+    <h1 style="color: black; font-size: 20px;">Progress Tracker</h1>
+    <nav>
+      <a href="index.html" style="color: black; font-size: 20px;">Home</a>
+      <a href="courses.html" style="color: black; font-size: 20px;">Courses</a>
+      <a href="quiz.html" style="color: black; font-size: 20px;">Quizzes</a>
+    </nav>
+  </header>
+  <main>
+    <section id="progressTracker">
+      <h2>Progress Tracker</h2>
+      <div class="progress-container">
+        <div id="progressBar" class="progress-bar" style="width: 0%;">0%</div>
+      </div>
+      <div id="progressStats">
+        <p>Questions Attempted: 0/5</p>
+      </div>
+    </section>
+  </main>
+  <script>
+    const totalQuestions = 5; // Total number of questions
+    let questionsAttempted = 5; // Example: Set initial attempted questions
+
+    // Function to update progress
+    function updateProgress() {
+      const percentage = Math.round((questionsAttempted / totalQuestions) * 100);
+      document.getElementById('progressBar').style.width = percentage + '%';
+      document.getElementById('progressBar').textContent = percentage + '%';
+      document.getElementById('progressStats').innerHTML = `<p>Questions Attempted: ${questionsAttempted}/${totalQuestions}</p>`;
+    }
+
+    // Simulate progress update on page load
+    document.addEventListener('DOMContentLoaded', updateProgress);
+  </script>
+</body>
+</html>
